@@ -1,0 +1,96 @@
+{
+  "_nasil_degistirilir": "Bu dosyadaki yazıları/haberleri değiştir, kaydet, GitHub'a push et. Hem bot hem Mini App canlı günceller. <b>...</b> = kalın. {disclaimer} otomatik olarak alttaki uyarı metniyle değişir.",
+
+  "title": "Kripto Haber",
+
+  "_marka_notu": "Kendi marka adını yaz. Gerçek bir borsa/ajans (Binance, Coinbase, Bloomberg HT vb.) adını/logosunu izinsiz kullanma.",
+
+  "_kanal_linki": "Kendi Telegram kanalının linki. Boşsa 'Kanala Katıl' butonu gizlenir.",
+  "channel_url": "https://t.me/CryptonewsTurkiye",
+
+  "_webapp_linki": "Mini App (kart görünümü) için webapp/ klasörünü GitHub Pages'te yayınla ve adresi buraya yaz. Boş bırakırsan bot sohbet içi görünümü kullanır.",
+  "webapp_url": "",
+
+  "disclaimer": "⚠️ Bu içerik yalnızca bilgilendirme amaçlıdır, yatırım tavsiyesi değildir. Kararlarını kendi araştırmanla (DYOR) ver.",
+
+  "start_caption": [
+    "📰 <b>Kripto Haber</b>",
+    "",
+    "Bitcoin, Ethereum ve kripto piyasasından güncel haberler ve canlı fiyatlar.",
+    "Başlamak için aşağıdaki butona dokun 👇"
+  ],
+
+  "welcome_caption": [
+    "👋 <b>Hoş geldin!</b>",
+    "",
+    "• 📰 <b>Son Haberler</b> — piyasadan güncel başlıklar",
+    "• 💹 <b>Canlı Fiyatlar</b> — anlık BTC, ETH ve daha fazlası",
+    "• 📢 <b>Kanala Katıl</b> — tüm güncellemeler",
+    "",
+    "{disclaimer}"
+  ],
+
+  "about_text": [
+    "<b>Hakkında</b>",
+    "",
+    "Kripto Haber, kripto para piyasasından güncel haberleri ve canlı fiyatları takip etmen için bir bilgilendirme botudur.",
+    "",
+    "Sadece /start ile botu başlatan kullanıcılara mesaj gönderilir. İstediğin an /stop yazarak çıkabilirsin.",
+    "",
+    "{disclaimer}"
+  ],
+
+  "news_intro": ["📰 <b>Son Haberler</b>", ""],
+  "no_news_text": "Şu an gösterilecek haber yok. Yakında güncellenecek.",
+  "prices_intro": ["💹 <b>Canlı Fiyatlar</b>", "<i>Kaynak: CoinGecko</i>", ""],
+  "prices_error": "Fiyatlar şu an alınamadı, lütfen birazdan tekrar dene.",
+
+  "help_text": "Menüyü açmak için /start gönder. Çıkmak için /stop.",
+  "stop_text": "Tamam — artık mesaj almayacaksın. Dönmek için /start yaz.",
+
+  "_menu_kelimeleri": "Kullanıcı bunlardan birini yazınca menü açılır. Türkçe karakter/büyük-küçük önemsiz.",
+  "menu_keywords": [
+    "menü", "menu", "başla", "basla", "start",
+    "haber", "haberler", "kripto", "fiyat", "fiyatlar",
+    "bitcoin", "btc", "ethereum", "eth", "borsa"
+  ],
+
+  "buttons": {
+    "start": "🚀 BAŞLAT",
+    "news": "📰 Son Haberler",
+    "prices": "💹 Canlı Fiyatlar",
+    "channel": "📢 Kanala Katıl",
+    "about": "ℹ️ Hakkında",
+    "back": "⬅️ Geri"
+  },
+
+  "_coins_not": "Canlı fiyatı gösterilecek coinler. id = CoinGecko kimliği (ör. bitcoin, ethereum). İstediğini ekle/çıkar.",
+  "coins": [
+    { "id": "bitcoin",     "symbol": "BTC", "name": "Bitcoin" },
+    { "id": "ethereum",    "symbol": "ETH", "name": "Ethereum" },
+    { "id": "binancecoin", "symbol": "BNB", "name": "BNB" },
+    { "id": "solana",      "symbol": "SOL", "name": "Solana" },
+    { "id": "ripple",      "symbol": "XRP", "name": "XRP" },
+    { "id": "dogecoin",    "symbol": "DOGE", "name": "Dogecoin" }
+  ],
+
+  "_haberler_not": "Haberleri buradan düzenle. title = başlık, lines = paragraflar (her satır ayrı), url = 'Devamı' linki (boş bırakılabilir).",
+  "news": [
+    {
+      "title": "📊 Piyasada Son Durum: Yatay Seyir Sürüyor",
+      "lines": [
+        "Bitcoin öncülüğündeki kripto piyasası, kritik direnç seviyelerini test ettikten sonra dar bir bantta hareket etmeye devam ediyor.",
+        "Analistler, küresel makroekonomik verilerin önümüzdeki günlerde oynaklığı artırabileceğini belirtiyor."
+      ],
+      "url": ""
+    },
+    {
+      "title": "📈 Haftalık Değerlendirme",
+      "lines": [
+        "Ana akım altcoinlerde işlem hacimleri görece düşük seyrederken, yatırımcılar kurumsal fon akışlarını yakından izliyor.",
+        "Risk yönetimini elden bırakmamak önemini koruyor."
+      ],
+      "url": ""
+    }
+  ]
+}
