@@ -8,6 +8,9 @@
   "_kanal_linki": "Kendi Telegram kanalının linki. Boşsa 'Kanala Katıl' butonu gizlenir.",
   "channel_url": "https://t.me/CryptonewsTurkiye",
 
+  "_haber_linki": "'Son Haberler' butonuna basınca açılacak haber sitesi. https:// ile başlarsa buton o adresi açar; boş bırakılırsa eski 'haber listesi' görünümü kullanılır.",
+  "news_url": "https://haber.doviz.com/",
+
   "_webapp_linki": "Mini App (kart görünümü) için webapp/ klasörünü GitHub Pages'te yayınla ve adresi buraya yaz. Boş bırakırsan bot sohbet içi görünümü kullanır.",
   "webapp_url": "https://altaykandermir-art.github.io/cryptonews/index.html",
 
