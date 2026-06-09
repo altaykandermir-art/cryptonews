@@ -39,9 +39,14 @@
   <h1 id="title">Kripto Haber</h1>
   <div class="sub" id="sub">Yükleniyor…</div>
 
-  <a href="#" id="dovizFull" style="display:block;text-align:center;background:#1f6feb;color:#fff;font-weight:700;text-decoration:none;padding:14px;border-radius:14px;margin-bottom:16px;">
-    📊 Döviz, Altın &amp; Haberler — doviz.com'u Aç
-  </a>
+  <div style="display:flex;gap:10px;margin-bottom:16px;">
+    <a href="#" data-link="https://www.doviz.com/" style="flex:1;text-align:center;background:#1f6feb;color:#fff;font-weight:700;text-decoration:none;padding:14px 8px;border-radius:14px;">
+      💱 Döviz &amp; Altın
+    </a>
+    <a href="#" data-link="https://haber.doviz.com/" style="flex:1;text-align:center;background:#238636;color:#fff;font-weight:700;text-decoration:none;padding:14px 8px;border-radius:14px;">
+      📰 Son Haberler
+    </a>
+  </div>
 
   <div id="news"></div>
 
@@ -134,13 +139,14 @@
       }
     }
 
-    const dovizBtn = document.getElementById("dovizFull");
-    if (dovizBtn) dovizBtn.addEventListener("click", ev => {
-      ev.preventDefault();
-      const u = "https://www.doviz.com/";
-      if (tg && tg.openLink) tg.openLink(u, { try_instant_view: false });
-      else window.open(u, "_blank", "noopener");
-    });
+    document.querySelectorAll("a[data-link]").forEach(a =>
+      a.addEventListener("click", ev => {
+        ev.preventDefault();
+        const u = a.getAttribute("data-link");
+        if (tg && tg.openLink) tg.openLink(u, { try_instant_view: false });
+        else window.open(u, "_blank", "noopener");
+      })
+    );
 
     load();
   </script>
