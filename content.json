@@ -74,23 +74,6 @@
     { "id": "dogecoin",    "symbol": "DOGE", "name": "Dogecoin" }
   ],
 
-  "_haberler_not": "Haberleri buradan düzenle. title = başlık, lines = paragraflar (her satır ayrı), url = 'Devamı' linki (boş bırakılabilir).",
-  "news": [
-    {
-      "title": "📊 Piyasada Son Durum: Yatay Seyir Sürüyor",
-      "lines": [
-        "Bitcoin öncülüğündeki kripto piyasası, kritik direnç seviyelerini test ettikten sonra dar bir bantta hareket etmeye devam ediyor.",
-        "Analistler, küresel makroekonomik verilerin önümüzdeki günlerde oynaklığı artırabileceğini belirtiyor."
-      ],
-      "url": ""
-    },
-    {
-      "title": "📈 Haftalık Değerlendirme",
-      "lines": [
-        "Ana akım altcoinlerde işlem hacimleri görece düşük seyrederken, yatırımcılar kurumsal fon akışlarını yakından izliyor.",
-        "Risk yönetimini elden bırakmamak önemini koruyor."
-      ],
-      "url": ""
-    }
-  ]
+  "_haberler_not": "Haberleri buradan düzenle. title = başlık, lines = paragraflar (her satır ayrı), url = 'Devamı' linki (boş bırakılabilir). Boş bırakılırsa Mini App'te bu bölüm gizlenir; haberler TradingView akışından ve 'Son Haberler' (haber.doviz.com) butonundan gelir.",
+  "news": []
 }
