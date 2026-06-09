@@ -7,11 +7,11 @@
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
   <style>
     :root {
-      --bg: var(--tg-theme-bg-color, #0d1117);
-      --card: var(--tg-theme-secondary-bg-color, #161b22);
-      --text: var(--tg-theme-text-color, #ffffff);
-      --hint: var(--tg-theme-hint-color, #8b949e);
-      --up: #2ea043; --down: #f85149;
+      --bg: #0d1117;
+      --card: #161b22;
+      --text: #ffffff;
+      --hint: #c9d1d9;
+      --up: #3fb950; --down: #ff6b6b;
     }
     * { box-sizing: border-box; }
     body { margin: 0; background: var(--bg); color: var(--text);
@@ -38,17 +38,7 @@
 <body>
   <h1 id="title">Kripto Haber</h1>
   <div class="sub" id="sub">Yükleniyor…</div>
-  <div id="prices"></div>
-
-  <div class="sec">💱 Döviz &amp; Altın</div>
-  <div class="card" style="padding:6px;">
-    <div class="tradingview-widget-container">
-      <div class="tradingview-widget-container__widget"></div>
-      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
-      {"symbols":[{"description":"Dolar/TL","proName":"FX_IDC:USDTRY"},{"description":"Euro/TL","proName":"FX_IDC:EURTRY"},{"description":"Ons Altın","proName":"OANDA:XAUUSD"},{"description":"Bitcoin","proName":"BINANCE:BTCUSDT"}],"colorTheme":"dark","isTransparent":true,"displayMode":"compact","locale":"tr"}
-      </script>
-    </div>
-  </div>
+  <div id="news"></div>
 
   <div class="sec">📰 Piyasa Haberleri</div>
   <div class="card" style="padding:6px;">
@@ -60,7 +50,20 @@
     </div>
   </div>
 
-  <div id="news"></div>
+  <div id="prices"></div>
+
+  <div class="sec">💱 Döviz &amp; Altın</div>
+  <div class="card" style="padding:6px;">
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+      {"symbols":[{"description":"Dolar/TL","proName":"FX_IDC:USDTRY"},{"description":"Euro/TL","proName":"FX_IDC:EURTRY"},{"description":"Ons Altın","proName":"OANDA:XAUUSD"},{"description":"Bitcoin","proName":"BINANCE:BTCUSDT"}],"colorTheme":"dark","isTransparent":true,"displayMode":"compact","locale":"tr"}
+      </script>
+    </div>
+  </div>
+  <a href="#" id="dovizFull" class="card" style="display:block;text-align:center;color:#58a6ff;font-weight:700;text-decoration:none;margin-top:14px;">
+    📊 Tüm döviz, altın &amp; haberler → doviz.com
+  </a>
   <div class="note" id="note"></div>
 
   <script>
@@ -128,6 +131,15 @@
         );
       }
     }
+
+    const dovizBtn = document.getElementById("dovizFull");
+    if (dovizBtn) dovizBtn.addEventListener("click", ev => {
+      ev.preventDefault();
+      const u = "https://www.doviz.com/";
+      if (tg && tg.openLink) tg.openLink(u, { try_instant_view: false });
+      else window.open(u, "_blank", "noopener");
+    });
+
     load();
   </script>
 </body>
